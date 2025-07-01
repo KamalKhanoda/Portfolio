@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Kamal - Python Developer</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f7f7f7; }
+        nav { background: #222; color: #fff; display: flex; justify-content: space-between; align-items: center;}
+        nav h1 { display: inline; margin-right: 2em; }
+        nav ul { display: inline; list-style: none; padding: 0; margin: 0; }
+        nav ul li { display: inline; margin-right: 1em; }
+        nav ul li a { color: #fff; text-decoration: none; }
+        .container { max-width: 800px; margin: 2em auto; background: #fff; padding: 2em; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);}
+        h2 { color: #222; }
+        ul.skills { list-style: disc; margin-left: 2em; }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>KAMAL</h1>
+        <ul>
+            <li><a href="{{url_for('home')}}">Home</a></li>
+            <li><a href="{{url_for('projects')}}">Projects</a></li>
+            <li><a href="{{url_for('about')}}">About</a></li>
+            <li><a href="{{url_for('contact')}}">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h2>About Me</h2>
+        <p>
+            Hello! I'm <strong>Kamal</strong>, a passionate Python developer with experience building robust web applications, automating workflows, and solving real-world problems with code. I enjoy working with modern Python frameworks and tools to deliver clean, efficient, and maintainable solutions.
+        </p>
+        <h3>Skills</h3>
+        <ul class="skills">
+            <li>Python (Flask, Django, FastAPI)</li>
+            <li>Web Development (HTML, CSS, JavaScript)</li>
+            <li>APIs & RESTful Services</li>
+            <li>Database Management (SQLite, PostgreSQL, MySQL)</li>
+            <li>Automation & Scripting</li>
+            <li>Version Control (Git, GitHub)</li>
+        </ul>
+        <h3>Background</h3>
+        <p>
+            With a strong foundation in computer science and hands-on experience in various projects, I am always eager to learn new technologies and take on challenging problems. My goal is to contribute to impactful projects and grow as a developer.
+        </p>
+    </div>
+</body>

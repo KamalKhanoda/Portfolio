@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Kamal - Python Developer</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f7f7f7; }
+        nav { background: #222; color: #fff; display: flex; justify-content: space-between; align-items: center;}
+        nav h1 { display: inline; margin-right: 2em; }
+        nav ul { display: inline; list-style: none; padding: 0; margin: 0; }
+        nav ul li { display: inline; margin-right: 1em; }
+        nav ul li a { color: #fff; text-decoration: none; }
+        .container { max-width: 800px; margin: 2em auto; background: #fff; padding: 2em; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);}
+        h2 { color: #222; }
+        .project { margin-bottom: 2em; }
+        .project-title { font-size: 1.3em; font-weight: bold; color: #333; }
+        .project-desc { margin: 0.5em 0 0 0; }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>KAMAL</h1>
+        <ul>
+            <li><a href="{{url_for('home')}}">Home</a></li>
+            <li><a href="{{url_for('projects')}}">Projects</a></li>
+            <li><a href="{{url_for('about')}}">About</a></li>
+            <li><a href="{{url_for('contact')}}">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h2>My Projects</h2>
+        <div class="project">
+            <div class="project-title">Web Scraper using Python</div>
+            <div class="project-desc">
+                Developed a robust web scraper using Python and BeautifulSoup to extract data from e-commerce websites. The tool automates data collection, processes product information, and exports results to CSV for further analysis.
+            </div>
+        </div>
+        <div class="project">
+            <div class="project-title">Personal Portfolio Website</div>
+            <div class="project-desc">
+                Designed and built a responsive personal portfolio website using Flask, HTML, and CSS. The site showcases my skills, projects, and provides a contact form for potential clients or employers.
+            </div>
+        </div>
+        <div class="project">
+            <div class="project-title">Task Automation Script</div>
+            <div class="project-desc">
+                Created a Python script to automate repetitive file management tasks, such as renaming, organizing, and backing up files. This improved productivity and reduced manual errors in daily workflows.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
