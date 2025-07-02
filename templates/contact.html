@@ -45,5 +45,12 @@
             <button type="submit">Send Message</button>
         </form>
     </div>
+            message = document.querySelector('#contact');
+            document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent form submission
+            message.innerHTML = '<h2>Thank you for your message!</h2><p>We will get back to you soon.</p>';
+
+        });
+    </script>
 </body>
 </html>
